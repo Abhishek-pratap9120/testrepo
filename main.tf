@@ -13,3 +13,10 @@ variable "rg_name" {
 variable "rg_location" {
     default = "central india"
 }
+resource "azurerm_storage_account" "sgticket122" {
+    name = "sg122"
+    resource_group_name = "rg121"
+    location = "central india"
+    account_tier = "Standard"
+    account_replication_type = "GRS"
+}
